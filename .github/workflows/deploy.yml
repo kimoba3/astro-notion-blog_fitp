@@ -2,7 +2,7 @@ name: Deploy
 
 on:
   schedule:
-    - cron: '0 8 * * *' # 17:00(毎日) 日本時間は-9h
+    - cron: '0 8 * * 1' # 17:00(Mon) JST
   workflow_dispatch:
 
 jobs:
