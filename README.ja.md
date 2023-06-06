@@ -7,7 +7,7 @@
 
 <img src="https://user-images.githubusercontent.com/1063435/213838069-c9654c32-ec9b-4e82-a3b5-2acbd665b16a.png" width="480">
 
-astro-notion-blog を使えば [Notion](https://www.notion.so) で書けるブログを作ることができます。  
+astro-notion-blog を使えば [Notion](https://www.notion.so) で書けるブログを作ることができます。
 ブログは [Astro](https://astro.build/) を使って静的生成されるので非常に高速です。
 
 - :rocket: ページの表示が**爆速**
@@ -58,7 +58,7 @@ astro-notion-blog を使えば [Notion](https://www.notion.so) で書けるブ�
 10. 「ビルドの設定」で、
     1. 「フレームワーク プリセット」で Astro を選択します
     2. 「環境変数(アドバンスド)」 を開き `NODE_VERSION`, `NOTION_API_SECRET`, `DATABASE_ID` の 3 つを設定します
-       - `NODE_VERSION` は `v16.13.0` かそれ以上を指定します
+       - `NODE_VERSION` は `v18.16.0` かそれ以上を指定します
        - 詳しくは [How to deploy a site with Git](https://docs.astro.build/en/guides/deploy/cloudflare/#how-to-deploy-a-site-with-git) をご覧ください
 
 <img src="https://user-images.githubusercontent.com/1063435/213967111-72ea2ad1-ad3b-4629-8b65-7b25bc6ddb31.png" width="400">
@@ -67,14 +67,14 @@ astro-notion-blog を使えば [Notion](https://www.notion.so) で書けるブ�
 
 11. "Save and Deploy" をクリックし、デプロイが完了すると Notion Blog が見えるようになります
 
-astro-notion-blog では新しい記事や変更を公開したいとき毎回デプロイが必要になります。  
+astro-notion-blog では新しい記事や変更を公開したいとき毎回デプロイが必要になります。
 Cloudflare Pages のダッシュボードから手動でデプロイするか、GitHub Action のような CI を使って定時デプロイしてください。
 
 ## カスタマイズするには
 
 ### 追加の必要要件
 
-- Node.js v16 かそれ以上
+- Node.js v18 かそれ以上
 - Git
 - [Yarn](https://yarnpkg.com/getting-started)
 
@@ -90,8 +90,8 @@ export DATABASE_ID=<YOUR_DATABASE_ID>
 2. 依存関係をインストールしローカルサーバーを起動します
 
 ```sh
-yarn install
-yarn dev
+npm install
+npm run dev
 ```
 
 3. ブラウザで [http://localhost:3000](http://localhost:3000) を開きます
